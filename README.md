@@ -1,4 +1,7 @@
 # SED Challenge
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go Coverage](https://github.com/aaronireland/Aaron_Challenge/wiki/coverage.svg)](https://raw.githack.com/wiki/aaronireland/Aaron_Challenge/coverage.html)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aaronireland/Aaron_Challenge?)](https://goreportcard.com/report/github.com/aaronireland/Aaron_Challenge)
 
 This repository contains two demo projects:
 - The `static-site` project deploys a secure static web application to AWS.

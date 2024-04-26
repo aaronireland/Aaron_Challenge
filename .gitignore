@@ -1,3 +1,4 @@
+.envrc
 
 ###############################################################################################
 #                   Go
@@ -32,11 +33,15 @@ go.work
 
 # Local .terraform directories
 **/.terraform/*
+*/remote-state/*
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
 *.tfplan
+*/tfplan
+
+.terraform.lock.hcl
 
 # Crash log files
 crash.log

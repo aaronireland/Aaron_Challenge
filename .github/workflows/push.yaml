@@ -21,8 +21,7 @@ jobs:
         with:
           install-only: true
       - name: Test
-        run: mage test:unit
-        working-directory: ${{ github.workspace }}/cc-validator
+        run: mage ccvalidator:test
       - name: Update coverage report
         uses: ncruces/go-coverage-report@v0.3.0
         with:

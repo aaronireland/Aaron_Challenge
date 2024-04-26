@@ -9,8 +9,17 @@ This repository contains two demo projects:
 
 ## static-site
 
-Uses Terraform to deploy an EKS cluster and Helm to deploy an NGinx web server that servers a single html file.
+Uses Terraform to deploy an AWS CloudFront distribution that serves a single html file from an S3 bucket.
 
+#### Requirements
+
+1. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+2. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html)
+3. [Mage](https://go.dev/doc/install)
+
+#### Set up
+
+TODO
 
 ## cc-validator
 

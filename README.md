@@ -11,6 +11,11 @@ This repository contains two demo projects:
 
 Uses Terraform to deploy an AWS CloudFront distribution that serves a single html file from an S3 bucket.
 
+#### Demo
+
+1. HTTPS: <a href="https://sed-challenge.aaronireland.net" target="_blank">https://sed-challenge.aaronireland.net</a>
+2. HTTP(redirect): <a href="http://sed-challenge.aaronireland.net" target="_blank">http://sed-challenge.aaronireland.net</a>
+
 #### Requirements
 
 1. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
@@ -50,7 +55,7 @@ This project was built with Go version 1.22 on a darwin/amd64 machine. The binar
 build directly with `go` commands and/or can be run directly with `go run`
 
 ```shell
-(cd cc-validator; mage build)
+mage ccvalidator:build
 ```
 
 The binary will be build to the `bin/` directory at the project root and can be run like this:
@@ -94,11 +99,11 @@ If run with the `-v` flag, the card numbers and validation errors will be shown.
 To run tests with mage: 
 
 ```shell
-(cd cc-validator; mage test:unit)
+mage ccvalidator:test
 ```
 
 or with the html coverage:
 
 ```shell
-(cd cc-validator; mage test:htmlcov)
+mage ccvalidator:coverage
 ```
